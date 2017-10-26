@@ -1,0 +1,80 @@
+font-family: 'Montserrat', sans-serif;
+font-family: 'Lato', sans-serif;
+
+
+
+
+
+<...............................>
+
+.head{
+    background-color: #2C4052;
+    height: 120px;
+    width: 100%;
+    position: relative;
+    bottom:50px;
+    right:10px;
+}
+
+.head h2{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 190%;
+    color: white;
+    position: relative;
+    top: 55px;
+    left:100px;
+}
+
+ul{
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    line-height: 50px;
+
+}
+
+ li{
+    width: 100px;
+    text-align: center;
+    float: right;
+    position: relative;
+    top: -16px;
+    right: 70px;
+}
+
+ a{
+    text-decoration: none;
+    font-family: 'Montserrat', sans-serif;
+    color: white;
+    font-size: large;
+    font-weight: bold;
+    
+}
+
+a:hover{
+    color: #00C09A;
+}
+
+.intro{
+    background-color: #00C09A;
+    width: 100%;
+    
+}
+
+
+////////////////////////////
+
+/*para arreglar el encabezado se pone un nuevo div class "fix" que contenga a
+intro y al menu de navegacion*/
+
+.fix{
+    width: 90%;
+    max-width: 1000px;
+    margin:auto;
+    padding: 10px
+    overflow:hidden;
+}
+ <'''''''''''''''''''''>
+
+ /*Doy estilo al header, utilizo overfloat 
+                          para impedir errores al momento de trabajar con float*/

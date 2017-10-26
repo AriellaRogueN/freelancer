@@ -1,3 +1,242 @@
-/*
- * Estilos de tu proyecto
- */
+*{
+    margin:0;
+    padding:0;
+}               /*quito los margenes por defecto que entrega el navegador*/
+                        
+
+header{         /*Doy estilo al header, utilizo overfloat 
+                 para impedir errores al momento de trabajar con float*/ 
+    width:100%; 
+    height: auto;
+    overflow:hidden;
+    background: #2C4052;
+    margin-bottom: 20px;
+    position:fixed;
+    z-index:3 ;
+}
+
+header .intro{
+/*desplazo "intro" a la izquienda con float left* y le doy estilo*/
+    
+    font-size: 17px;
+    font-family: 'Montserrat', sans-serif;
+    color:white;
+    line-height: 110px;
+    float: left;
+   
+}
+
+header h1{                     /*Transformo h1 en un elemento en linea para poder moverlo*/
+    display: inline-block;
+    margin-left: 90px;
+    top: 10px;
+}
+
+/*Dezplazo nav a la derecha */
+/*Le coloco line height igual al de "intro",
+          esto permite que el menu se centre*/
+header nav{
+    position:relative;
+    right: 101px;
+    float:right;
+    line-height: 111px; 
+}
+
+header nav a{
+    display:inline-block;
+    text-decoration: none;
+    font-family:'Montserrat', sans-serif;
+    color: white;
+    font-weight: bold;
+    padding: 5px 10px;   /*coloco padding hacia arriba y hacia a los lados*/
+    }
+
+a:hover{
+    color:#00C09A;    
+}
+
+.item1{
+    
+    position: relative;
+    bottom: 20px;
+    background-color: #00C09A;
+    width: 100%;
+    height: auto;
+    font-family: 'Montserrat', sans-serif;
+    height: 700px;
+   
+}/*estilizando imagenes y texto de la primera seccion*/
+
+.imgitem1{
+    
+    position:relative;
+    top:230px;
+    left:500px;
+}
+
+.paragraph1{
+    
+    position: absolute;
+    top: 510px;
+    left:260px;
+    color:white;
+    font-family: 'Montserrat', sans-serif;
+
+}
+
+.paragraph1 h2{
+    
+    font-size: 76px;
+    font-weight: bold;
+    line-height: 114px;
+    padding-bottom: 70px;
+}
+
+.paragraph1 p{
+    
+    font-size: 26px;
+    line-height: 42px;
+}
+
+/*Estilizando segunda seccion*/
+
+.item2{
+    
+    position: relative;
+    width: 100%;
+    height: auto;
+    bottom: 20px;
+    background-color: white;
+    color:black;
+}
+
+.item2 h1{
+    position: relative;
+    top: 100px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: black;
+}
+
+.imgport img {              /*Para insertar las imagenes se flotan hacia la
+                              y le damos posicion, adicionalmente damos padding
+                              para darles espacio, sino quedarian todas juntas*/
+    position: relative;
+    top:150px;
+    left: 80px;
+    width: 350px;
+    height:250px;
+    padding: 15px 15px;
+    min-height: 1px;
+    float: left;
+}
+/*Estilizando tercera seccion*/
+.item3{
+    
+    position: relative;                 
+    top:800px;
+    background-color: #00C09A;
+    color:white;
+    font-size: 20px;
+    font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    width: 100%;
+    height: auto;
+    
+    
+   
+}
+/*creo una tabla para colocar el texto en dos columnas*/
+
+table{                          /*utilizo margen 0 auto a izquierda y derecha,
+                                   para centrar la tabla, luego se posiciona.*/
+    position: relative;
+    bottom: 300px;
+    padding-bottom: 50px;
+    margin:0 auto;
+    bottom: 350px;
+    width: 55%;
+    line-height: 30px;
+}
+
+td{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+/*Doy estilo al icono agregado mediante la etiqueta i
+y  genero un boton de descarga*/
+div i{
+    position:absolute;
+    display:block;
+    border: 2pX solid white;
+    border-radius:10px;
+    padding: 15px;
+    top:490px;
+    left: 500px;
+}
+
+.item3 h1{
+    display:block;
+    position: relative;
+    bottom: 450px;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    text-align: center;
+    color: white; 
+}
+
+.item4{
+    position: relative;
+    background-color: white;
+    width:100% ;
+    height:auto ;
+}
+.item4 h2{
+    display:block;
+    position:absolute;
+    top:900px;
+    font-family:'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bold;
+    left:500px;
+}
+
+
+form{
+    display:block;
+    position:absolute;
+    background-color: white;
+    width: 80%;
+    height:90% ;
+    left:250px;
+    top:1000px;
+}
+
+input{
+    font-family:'Lato', sans-serif;
+    font-size: 26px;
+    font-weight: bold;
+    line-height: 100px;  
+    border:none;
+}
+
+hr{
+    width:740px ;
+}
+
+input[type="text"]{
+    padding-bottom: 140px;
+}
+
+input[type="button"]{
+   margin-top: 50px;
+   width:80px ;
+   height:40px ;
+   border-radius: 5px;
+   background-color: #009275;
+   color:white;
+   font-size: 12px;
+}
